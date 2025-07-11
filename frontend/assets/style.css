@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(Database-Pada-Internet-Of-Things.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landing-page {
+  background-image: url(Database-Pada-Internet-Of-Things.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(245, 240, 240);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.btn-login {
+  background: #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn-get-started {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.features {
+  background: white;
+  color: #2c3e50;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.login-page {
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn-login {
+  background: #2d6aa7;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+.dashboard {
+  width: 1500px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.panel {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  color: #144e88;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.sensor-data {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.sensor-card {
+  background: rgb(42, 58, 176);
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sensor-card h3 {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c6ced6;
+  margin-top: 5px;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-control {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #e74c3c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+  min-width: 100px;
+  transition: background 0.3s;
+}
+
+.btn-control.on {
+  background: #2e31cc;
+}
+
+.log {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.log p {
+   color: #34495e;
+}
+.footer-satu {
+    background-color: transparent;
+    color: rgb(18, 9, 101);
+    padding: 40px 20px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-dua {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.footer-tiga {
+    flex: 1 1 200px;
+}
+
+.footer-tiga h4 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-lima {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 13px;
+}

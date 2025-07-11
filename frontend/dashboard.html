@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard IoT - Praktikum Elektro</title>
+		<link rel="stylesheet" href="dist/output.css" />
+	</head>
+	<body class="bg-cover bg-center bg-no-repeat bg-fixed min-h-screen w-full font-sans" style="background-image: url(assets/Database-Pada-Internet-Of-Things.png);">
+	<div class=""></div>
+
+	<!-- Heading -->
+   <div class="flex items-center justify-center"></div>
+    <h1 class="text-center text-3xl font-bold text-[#2c3e50] mb-6 mt-6">WELCOME TO DASHBOARD</h1>
+	
+	<!-- Sensor Panel -->
+    <div class="bg-white p-4 rounded-lg mb-6 shadow-md">
+      <h2 class="text-xl font-bold text-[#144e88] mb-4 flex items-center">
+        <img src="assets/Sensor_Industry.png" class="w-6 h-6 mr-2" alt="icon"/> DATA SENSOR
+      </h2>
+	
+	<div class="flex flex-wrap gap-4">
+        <div class="flex-1 min-w-[120px] bg-indigo-700 text-white p-4 rounded-md text-center shadow-md">
+          <h3 class="text-sm font-bold">TEKANAN</h3>
+          <div class="text-2xl font-bold mt-2 text-[#c6ced6]" id="pressure-value">-- psi</div>
+        </div>				
+				
+	<div class="flex-1 min-w-[120px] bg-indigo-700 text-white p-4 rounded-md text-center shadow-md">
+          <h3 class="text-sm font-bold">KELEMBAPAN</h3>
+          <div class="text-2xl font-bold mt-2 text-[#c6ced6]" id="humidity-value">-- %</div>
+        </div>
+
+	<div class="flex-1 min-w-[120px] bg-indigo-700 text-white p-4 rounded-md text-center shadow-md">
+          <h3 class="text-sm font-bold">SUARA</h3>
+          <div class="text-2xl font-bold mt-2 text-[#c6ced6]" id="sound-value">-- dB</div>
+        </div>
+
+  <div class="flex-1 min-w-[120px] bg-indigo-700 text-white p-4 rounded-md text-center shadow-md">
+          <h3 class="text-sm font-bold">WAKTU</h3>
+          <div class="text-2xl font-bold mt-2 text-[#c6ced6]" id="timestamp-value">-- </div>
+        </div>
+  
+   <div class="flex-1 min-w-[120px] bg-indigo-700 text-white p-4 rounded-md text-center shadow-md">
+          <h3 class="text-sm font-bold">KECEPATAN ANGIN</h3>
+          <div class="text-2xl font-bold mt-2 text-[#c6ced6]" id="windspeed-value">-- m/s</div>
+        </div>
+      </div>
+    </div>
+
+	 <!-- Control Panel -->
+    <div class="bg-white p-4 rounded-lg mb-6 shadow-md">
+      <h2 class="text-xl font-bold text-[#144e88] mb-4 flex items-center">
+        <img src="assets/logokontrolperangkat.jpg" class="w-6 h-6 mr-2" alt="icon"/> KONTROL PERANGKAT
+      </h2>
+
+	    <div class="flex flex-wrap gap-4">
+        <button id="pressure-button" onclick="togglePressure()" class="flex-1 min-w-[100px] bg-red-500 text-white font-semibold py-2 px-4 rounded transition">
+          Pressure OFF
+        </button>
+        <button id="humidity-button" onclick="toggleHumidity()" class="flex-1 min-w-[100px] bg-red-500 text-white font-semibold py-2 px-4 rounded transition">
+          Hygrometer OFF
+        </button>
+        <button id="sound-button" onclick="toggleSound()" class="flex-1 min-w-[100px] bg-red-500 text-white font-semibold py-2 px-4 rounded transition">
+          Soundmeter OFF
+        </button>
+        <button id="timestamp-button" onclick="toggleTimestamp()" class="flex-1 min-w-[100px] bg-red-500 text-white font-semibold py-2 px-4 rounded transition">
+          Timestamp OFF
+        </button>
+        <button id="windspeed-button" onclick="toggleWindspeed()" class="flex-1 min-w-[100px] bg-red-500 text-white font-semibold py-2 px-4 rounded transition">
+          Windspeed OFF
+        </button>
+      </div>
+    </div>
+
+	<!-- Log Panel -->
+    <div class="bg-white p-4 rounded-lg mb-6 shadow-md">
+      <h2 class="text-xl font-bold text-[#144e88] mb-4 flex items-center">
+        <img src="assets/download.png" class="w-6 h-6 mr-2" alt="icon"/> LOG AKTIVITAS
+      </h2>
+
+      <div id="activity-log" class="rounded-md p-4 mb-6 max-h-[150px] overflow-y-auto font-mono text-sm text-[#34495e]">
+        <p>Sistem siap...</p>
+      </div>
+    </div>
+
+	 </div>
+
+	   <!-- Footer -->
+  <footer class="bg-transparent mt-10 text-indigo-900 p-6 py-10 font-sans">
+    <div class="flex flex-wrap justify-between text-center gap-6">
+
+      <div class="flex-1 min-w-[200px]">
+        <h4 class="text-black text-2xl font-semibold mb-2">ABOUT US</h4>
+        <p class="text-base leading-relaxed">
+          GITA DWI NATARINA (23410300593)<br />
+          FARKHANA JINGGA ARDANI (23410300594)<br />
+          ROSITA AYU ANDINI (23410300624)
+        </p>
+      </div>
+
+	  <div class="flex-1 min-w-[200px]">
+        <h4 class="text-black text-2xl font-semibold mb-2">CONTACT</h4>
+        <p class="text-base">kelompok8@gmail.com</p>
+      </div>
+
+	  </div>
+
+	   <div class="text-center text-sm mt-6">
+      <p>&copy; 2025 KELOMPOK 8</p>
+    </div>
+  </footer>
+
+   <script src="assets/script.js"></script>
+</body>
+</html>
+

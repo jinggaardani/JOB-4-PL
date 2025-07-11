@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tail-dev": "tailwindcss -i ./src/input.css -o ./output.css --watch",
+    "tail-prod": "tailwindcss -i ./src/input.css -o ./output.css --minify"
+  }
+}
